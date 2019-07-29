@@ -1,0 +1,232 @@
+%-------------------------
+% Resume in Latex
+% Author : Victor Quach
+% Adapted from: Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[utf8]{inputenc} % usually not needed (loaded by default)
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex, hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+
+% \usepackage[a4paper,bindingoffset=0.0in,%
+            % left=0.5in,right=0.5in,top=0.2in,bottom=0.2in,%
+            % footskip=.25in]{geometry}
+
+
+\usepackage[charter]{mathdesign} % Bitstream Charter
+% \usepackage{newpxtext,newpxmath} % Palatino
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.50in}
+\addtolength{\evensidemargin}{-0.50in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNoBullet}[2]{
+  \item[]\small{
+    \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% custom commands
+\newcommand{\shorterSection}[1]{\vspace{-10pt}\section{#1}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  \small{ \textbf{\href{}{\huge Victor Quach}} \\  \href{mailto:victor.quach@m4x.org}{\color{blue}\underline{victor.quach@m4x.org}} $\vert$
+  857-829-7139 $\vert$
+  LinkedIn: \href{https://www.linkedin.com/in/varal7/}{\color{blue}\underline{varal7}} $\vert$
+  Github: \href{https://github.com/varal7}{\color{blue}\underline{varal7}}
+}
+
+\end{center}
+
+\begin{center}
+\end{center}
+
+
+%-----------EDUCATION-----------------
+\shorterSection{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Massachusetts Institute of Technology (MIT)}{Cambridge, MA}
+      {\shortstack[l]{
+        Master of Science in Computer Science;  GPA: 5.0/5.0 \\
+        PhD student in Computer Science
+      }
+      }
+      {\shortstack[r]{
+          Sep 2017 - Feb 2020 (exp.) \\
+          Sep 2017 - Ongoing
+        }
+      }
+      {
+      \vspace{-6pt}
+      % \resumeItemNoBullet{\quad Thesis}{Automatic Program Repair with Natural Language Hints}
+      \resumeItemNoBullet{\quad Elective courses}{Advanced Machine Learning, Advanced Natural Language Processing, Advanced Algorithms, Computer Systems Security}
+    }
+    \vspace{2pt}
+    \resumeSubheading
+      {École polytechnique}{Palaiseau, France}
+      {\shortstack[l]{
+        Master's degree in Computer Science and Mathematics; GPA: 3.93/4.0; Rank: 21/511 \\
+        Bachelor of Science in Engineering; GPA: 3.92/4.0}
+      }
+      {\shortstack[r]{
+        Sep 2016 - Aug 2017 \\
+        Sep 2014 - Aug 2016}
+      }
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\shorterSection{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {MIT Computer Science and Artificial Intelligence Laboratory (MIT CSAIL)}{Cambridge, MA}
+      {Research Assistant in the Natural Language Processing group}{Sep 2017 - Ongoing}
+      \resumeItemListStart
+    \item \small Built complete machine learning pipelines (data scraping, cleaning, model design, implementation, training, visualization, and analysis)
+      \resumeSubItem{NLPProg} {Ongoing work on  Automatic Program Repair using Natural Language hints (parsing python code, AST differentiation, graph neural network with message passing)}
+      \vspace{3pt}
+      \resumeSubItem{PGM} {Implemented multi-task learning strategies for representation learning in a pre-training scenario; pretrain on part-of-speech tagging, named entity recognition, chunking, dependency parsing, language modeling and fine-tune on sentiment analysis, question answering, and SNLI}
+      \vspace{3pt}
+        \resumeSubItem{RTN} {Designed a framework for many-attribute information extraction, leveraging techniques from transfer learning, domain adaptation and semi-supervised learning}
+      \vspace{3pt}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {MIT Department of Electrical Engineering and Computer Science (MIT EECS)}{Cambridge, MA}
+      {Teaching assistant}{Jan 2019 - Aug 2019}
+      \resumeItemListStart
+        \resumeItem{6.86x Machine Learning with Python: from Linear Models to Deep Learning}
+        {6.86x is an online class part of MITx's MicroMaster in Statistics and Data Science offered to 1000+ students, offered for the first time this year.
+        \vspace{-5pt}
+          \begin{itemize}
+            \item Expanded the content of the course by adding additional problems, debugging the handout code, devising better solutions and rewriting the automatic graders so they could scale to thousands of students.
+            \item Assembled a class project for learners to compare EM and K-means for a collaborative filtering task
+            \item Revitalized a reinforcement learning problem with task descriptions in natural language for learners to experiment with tabular learning, linear Q learning and deep Q learning
+          \end{itemize}
+        }
+        \resumeItem{6.883 Modeling with machine learning: from algorithms to applications}
+        {
+          6.883 is an intermediary-level Machine Learning course offered to 100+  MIT undergrads and graduate students, offered for the first time this year.
+        }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {École Normale Supérieure - EHESS}{Paris, France}
+      {Research Intern in the Cognitive Machine Learning team}{Apr 2017 -- Aug 2017}
+      \resumeItemListStart
+        \resumeItem{Deep Logic}
+          {Designed, implemented and benchmarked hierarchical neural architectures on logical reasoning tasks with PyTorch. Experimented with hypernetworks in a meta-learning setting.  }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Theodo}{Paris, France}
+      {Software Engineer Intern}{Jun 2016 - Sep 2016}
+      \resumeItemListStart
+        \resumeItem{ELSAN}
+          {Developed a web application for a medical company using Symfony within an Agile team using Lean and Scrum}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\shorterSection{Projects}
+  \resumeSubHeadingListStart
+  \resumeSubItem{Kinder (TypeScript)} {Cloud-managed engine automating game actions through high-level scripts (MMORPG bots), 1000+ users.}
+  \resumeSubItem{\href{https://github.com/varal7/ieturk}{\faGithub\hspace{0.5em}IE-Turk (jQuery)}} { (200+ stars) Annotation tool for information extraction and named entity recognition with Mechanical Turk}
+  \resumeSubItem{\href{https://github.com/varal7/random_bst}{\faGithub\hspace{0.5em}Zip Trees benchmark (C++)}}{Implementation and benchmark of random binary search trees: skip lists, treaps and zip trees}
+  \resumeSubItem{\href{https://github.com/varal7/autocomplete.bin}{\faGithub\hspace{0.5em}LDAP Autocomplete (Vue.js / Django)}}{Autocompletion service for easy signing up backed by queries to the BR's LDAP}
+  \resumeSubItem{\href{https://github.com/varal7/opendata-ratp}{\faGithub\hspace{0.5em}OpenData RATP (PHP)}}{Demo for using WSDL format and SOAP protocol to query RATP's API}
+  \resumeSubItem{\href{https://github.com/varal7/projet-aaa}{\faGithub\hspace{0.5em}Topological Data Analysis (D3.js / Python)}}{Visualization of the topological structure of NBA data using the Mapper Algorithm}
+  \resumeSubItem{\href{https://github.com/BinetReseau/superette-khube}{\faGithub\hspace{0.5em}Cashier Web App (AngularJS / Django)}}{Cashier app for grocery's transactions, still in use at Polytechnique's local minimarket}
+  \resumeSubHeadingListEnd
+
+%-----------TOOLBOX-----------------
+\shorterSection{Skills / ToolBox}
+  \resumeSubHeadingListStart
+  \small
+    \item{
+     \textbf{Languages}{: Python, JavaScript, TypeScript, HTML, Java, C++}
+     \hfill
+     \textbf{Technologies}{: MacOs, Linux, vim, tmux, git, nginx, Docker}
+    }
+    \vspace{-5pt}
+    \item{
+     \textbf{Libraries}{: PyTorch, NumPy, Pandas, TensorFlow, Keras, Scikit-Learn, OpenCV, Jupyter, Django, Flask, Vue.js, React}
+    }
+\resumeSubHeadingListEnd
+
+%-----------Awards-----------------
+\shorterSection{Leadership and Awards}
+  \resumeSubHeadingListStart
+    \item[]\small{
+        {Finalist of the Data Science Game (DSG 2018), Ranked 37/2306 at Battle Dev (France's top coding competition - 2017), President of Binet Réseau (Student association that provides SysAdmin services, training and support - 2015) \textbf{Bronze medal at the International Mathematical Olympiad} (IMO 2012), Second national prize in Mathematics (Concours Général - 2012),  Third national prize in Biology (Concours Général - 2012),  Regional Awards in Physics (Concours Général - 2012), Bronze medal at the Balkan Mathematical Olympiad (BMO 2012), \textbf{Winner of the French Math Olympiads} (Olympiades Académiques de Mathématiques - 2011)  \vspace{-6pt}}
+    }
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
