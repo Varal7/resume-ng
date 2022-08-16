@@ -18,7 +18,7 @@
 \usepackage{enumitem}
 \usepackage[pdftex, hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage{fontawesome}
+\usepackage{fontawesome5}
 
 % \usepackage[a4paper,bindingoffset=0.0in,%
             % left=0.5in,right=0.5in,top=0.2in,bottom=0.2in,%
@@ -152,16 +152,24 @@
       {Research Assistant}{Cambridge, MA}
       {MIT Computer Science and Artificial Intelligence Laboratory (MIT CSAIL) - Regina Barzilay group}{Sep 2017 - Ongoing}
       \resumeItemListStart
-      \item \small Ongoing research work on privacy-preserving machine learning
-      \item \small Reviewed background work and experimented with new methods for \textbf{NLP} (language models, multi-task learning, representation learning, semi-supervised learning), \textbf{automatic program repair} (graph neural networks) and \textbf{computational chemistry} (molecular property prediction, drug design)
-      \item \small Built complete machine learning pipelines (data scraping, cleaning, model design, implementation, training, visualization, and analysis)
+      \item \small Ongoing research work on \textbf{privacy-preserving machine learning} in the context of applying Deep Learning to medical images.
+      \item \small Reviewed background work and experimented with new methods for \textbf{NLP} (language models, multi-task learning, representation learning, semi-supervised learning), \textbf{automatic program repair} (graph neural networks) and \textbf{computational chemistry} (molecular property prediction, drug design).
       \resumeItemListEnd
+
+    \resumeSubheading
+      {Algorithm Developer Intern}{NYC, NY}
+      {Hudson River Trading}{May 2022 - Aug 2022}
+      \resumeItemListStart
+          \item \small Forecasting for Retail Market Making.
+          \item \small Alpha and Order Execution Research for High Frequency Trading.
+      \resumeItemListEnd
+
 
     \resumeSubheading
       {Software Engineering Intern}{Cambridge, MA}
       {Facebook - PyTorch Core Team}{Jun 2021 - Aug 2021}
       \resumeItemListStart
-          \item \small Improved performance of the autograd engine by 16\%.
+          \item \small Improved performance of the PyTorch autograd engine by 16\%.
           \item \small Developed an API for users to register saved tensor hooks reducing memory usage from $O(n)$ to $O(1)$ at the cost of a 5x slowdown.
       \resumeItemListEnd
 
@@ -197,19 +205,42 @@
 
   \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------------
-\shorterSection{Projects}
+%-----------PUBLICATIONS-----------------
+\shorterSection{Publications}
   \resumeSubHeadingListStart
-  \resumeSubItem{\href{https://github.com/varal7/blank_language_model}{\faGithub\hspace{0.5em}Blank Language Model (Pytorch)}} {Flexible sequence modeling by any-order generation}
-  \resumeSubItem{\href{https://github.com/varal7/botafogo}{\faGithub\hspace{0.5em}Botafogo (CSS)}} {Responsive Wordpress theme for the ballroom dance team's website}
-  \resumeSubItem{Kinder (TypeScript)} {Cloud-managed engine automating game actions through high-level scripts (MMORPG bots), 1000+ users.}
-  \resumeSubItem{\href{https://github.com/varal7/ieturk}{\faGithub\hspace{0.5em}IE-Turk (jQuery)}} { (200+ stars) Annotation tool for information extraction and named entity recognition with Mechanical Turk}
-  \resumeSubItem{\href{https://github.com/varal7/random_bst}{\faGithub\hspace{0.5em}Zip Trees benchmark (C++)}}{Implementation and benchmark of random binary search trees: skip lists, treaps and zip trees}
-  \resumeSubItem{\href{https://github.com/varal7/autocomplete.bin}{\faGithub\hspace{0.5em}LDAP Autocomplete (Vue.js / Django)}}{Autocompletion service for easy signing up backed by queries to the BR's LDAP}
-  \resumeSubItem{\href{https://github.com/varal7/opendata-ratp}{\faGithub\hspace{0.5em}OpenData RATP (PHP)}}{Demo for using WSDL format and SOAP protocol to query RATP's API}
-  \resumeSubItem{\href{https://github.com/varal7/projet-aaa}{\faGithub\hspace{0.5em}Topological Data Analysis (D3.js / Python)}}{Visualization of the topological structure of NBA data using the Mapper Algorithm}
-  \resumeSubItem{\href{https://github.com/BinetReseau/superette-khube}{\faGithub\hspace{0.5em}Cashier Web App (AngularJS / Django)}}{Cashier app for grocery's transactions, still in use at Polytechnique's local minimarket}
+    \item[]\small{
+\hspace{-9pt}
+\faFile[regular]~
+\textbf{Syfer: Neural Obfuscation for Private Data Release}, arXiv 2022
+}
+    \vspace{-5pt}
+    \item[]\small{
+\hspace{-9pt}
+\faFile[regular]~
+\textbf{Automated Chemical Reaction Extraction from Scientific Literature}, Journal of Chemical Information and Modeling, 2021
+}
+    \vspace{-5pt}
+    \item[]\small{
+\hspace{-9pt}
+\faFile[regular]~
+\textbf{Blank Language Models}, Empirical Methods in Natural Language Processing, 2020
+}
   \resumeSubHeadingListEnd
+
+% %-----------PROJECTS-----------------
+% \shorterSection{Projects}
+%   \resumeSubHeadingListStart
+%   \resumeSubItem{\href{https://github.com/varal7/blank_language_model}{\faGithub\hspace{0.5em}Blank Language Model (Pytorch)}} {Flexible sequence modeling by any-order generation}
+%   \resumeSubItem{\href{https://github.com/varal7/botafogo}{\faGithub\hspace{0.5em}Botafogo (CSS)}} {Responsive Wordpress theme for the ballroom dance team's website}
+%   \resumeSubItem{Kinder (TypeScript)} {Cloud-managed engine automating game actions through high-level scripts (MMORPG bots), 1000+ users.}
+%   \resumeSubItem{\href{https://github.com/varal7/ieturk}{\faGithub\hspace{0.5em}IE-Turk (jQuery)}} { (200+ stars) Annotation tool for information extraction and named entity recognition with Mechanical Turk}
+%   \resumeSubItem{\href{https://github.com/varal7/random_bst}{\faGithub\hspace{0.5em}Zip Trees benchmark (C++)}}{Implementation and benchmark of random binary search trees: skip lists, treaps and zip trees}
+%   \resumeSubItem{\href{https://github.com/varal7/autocomplete.bin}{\faGithub\hspace{0.5em}LDAP Autocomplete (Vue.js / Django)}}{Autocompletion service for easy signing up backed by queries to the BR's LDAP}
+%   \resumeSubItem{\href{https://github.com/varal7/opendata-ratp}{\faGithub\hspace{0.5em}OpenData RATP (PHP)}}{Demo for using WSDL format and SOAP protocol to query RATP's API}
+%   \resumeSubItem{\href{https://github.com/varal7/projet-aaa}{\faGithub\hspace{0.5em}Topological Data Analysis (D3.js / Python)}}{Visualization of the topological structure of NBA data using the Mapper Algorithm}
+%   \resumeSubItem{\href{https://github.com/BinetReseau/superette-khube}{\faGithub\hspace{0.5em}Cashier Web App (AngularJS / Django)}}{Cashier app for grocery's transactions, still in use at Polytechnique's local minimarket}
+%   \resumeSubHeadingListEnd
+
 
 %-----------TOOLBOX-----------------
 \shorterSection{Skills / ToolBox}
@@ -225,7 +256,6 @@
      \textbf{Libraries}{: PyTorch, NumPy, Pandas, Keras, Scikit-Learn, OpenCV, Jupyter, Django, Flask, Vue.js, React}
     }
 \resumeSubHeadingListEnd
-
 %-----------Awards-----------------
 \shorterSection{Leadership and Awards}
   \resumeSubHeadingListStart
